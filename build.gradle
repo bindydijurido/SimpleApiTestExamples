@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'JSON_PlaceHolder'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'io.rest-assured:rest-assured:3.3.0'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
+
+}
