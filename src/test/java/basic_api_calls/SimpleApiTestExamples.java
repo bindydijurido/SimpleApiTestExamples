@@ -1,4 +1,4 @@
-package basic_api_calls.post_resource;
+package basic_api_calls;
 
 import io.restassured.RestAssured;
 import io.restassured.mapper.TypeRef;
