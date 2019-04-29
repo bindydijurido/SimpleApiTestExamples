@@ -3,8 +3,9 @@ REST API automated test with java+rest assured
 
 # Hello guys!
 
-This is Sample REST API tests. I used Fake Online REST API JSONPlaceholder here - https://jsonplaceholder.typicode.com
-If you are interested how it works maybe you should check README here: 
+This is Sample REST API tests. I used Fake Online REST API JSONPlaceholder (https://jsonplaceholder.typicode.com).
+
+If you are interested how it works maybe you should check README file which can be found here: 
 https://github.com/typicode/jsonplaceholder#how-to
 
 In this repository I am using several libraries and tools:
