@@ -22,12 +22,14 @@ public class SimpleApiTestExamples {
     @Test
     public void shouldPostsSizeBe100() {
 
+        int bodySize = 100;
+
         given().
                 when().
                 get("https://jsonplaceholder.typicode.com/posts").
                 then().
                 assertThat().
-                body("", hasSize(100));
+                body("", hasSize(bodySize));
     }
 
     /**
@@ -91,11 +93,14 @@ public class SimpleApiTestExamples {
     @Test
     public void shouldNameHasOneItemAtLeast() {
 
+        String key = "name";
+        String value = "Leanne Graham";
+
         given()
                 .when()
                 .get("https://jsonplaceholder.typicode.com/users")
                 .then()
-                .body("name", hasItems("Leanne Graham"));
+                .body(key, hasItems(value));
     }
 
     /**
@@ -132,10 +137,12 @@ public class SimpleApiTestExamples {
     @Test
     public void shouldTitleHasItemsInLimitedUserIds() {
 
+        int userIdLimit = 54;
+
         when()
                 .get("https://jsonplaceholder.typicode.com/posts")
                 .then()
-                .body("findAll { it.id < 54 }.title", hasItems("qui est esse", "nesciunt quas odio"));
+                .body("findAll { it.id < " + userIdLimit + " }.title", hasItems("qui est esse", "nesciunt quas odio"));
     }
 
     /**
