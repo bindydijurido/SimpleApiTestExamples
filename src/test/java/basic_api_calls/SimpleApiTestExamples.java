@@ -146,7 +146,7 @@ public class SimpleApiTestExamples {
     }
 
     /**
-     * This test will make request and assert validations on extracted objects"
+     * This test will make request and assert validations on extracted objects
      */
 
     @Test
